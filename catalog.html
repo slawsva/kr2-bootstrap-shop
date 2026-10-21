@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог устройств — техника для учёбы и проектов. Учебный магазин Study Supply.">
+    <title>Каталог устройств — Study Supply</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="topline">
+      <div class="container d-flex justify-content-between gap-3">
+        <span>Техника для учебного ритма</span>
+        <span>Учебный магазин · 2026</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">study<span class="brand-dot">●</span>
+            <span class="brand-sub">supply</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ms-auto gap-md-4">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Заявка</a>
+              </li>
+            </ul>
+            <a class="btn btn-dark ms-md-4 my-2 my-md-0" href="catalog.html">Выбрать устройство <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="container pt-4">
+        <nav aria-label="Хлебные крошки">
+          <ol class="breadcrumb small">
+            <li class="breadcrumb-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="section-space pt-4">
+        <div class="container">
+          <div class="row g-4 align-items-end mb-4">
+            <div class="col-lg-7">
+              <p class="eyebrow">Коллекция / 04 устройства</p>
+              <h1 class="page-title">Ваш следующий инструмент</h1>
+              <p class="text-secondary mb-0">От первого конспекта до готового проекта. Выберите то, что помогает именно вам.</p>
+            </div>
+            <div class="col-lg-5">
+              <label for="category-filter" class="form-label small">Что ищете?</label>
+              <div class="input-group">
+                <span class="input-group-text">Категория</span>
+                <select class="form-select" id="category-filter">
+                  <option value="all">Все устройства</option>
+                  <option value="Ноутбук">Ноутбуки</option>
+                  <option value="Планшет">Планшеты</option>
+                  <option value="Аксессуары">Аксессуары</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="small text-secondary" id="catalog-count" role="status">Показано товаров: 4</p>
+          <div class="row g-4">
+            <div class="col-sm-6 col-xl-3" data-catalog-category="Ноутбук">
+              <article class="card product-card h-100">
+                <a class="product-card-image" href="product.html" aria-label="Подробнее о StudyBook 14">
+                  <img src="images/studybook.svg" alt="Ноутбук StudyBook 14, схематическое изображение" width="520" height="365" loading="lazy">
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                    <span class="eyebrow mb-0">Ноутбук</span>
+                    <span class="badge rounded-pill text-bg-light">Для проектов</span>
+                  </div>
+                  <h3 class="card-title fs-4">
+                    <a href="product.html">StudyBook 14</a>
+                  </h3>
+                  <p class="card-text text-secondary small">Код, презентации и десятки открытых вкладок. Один ноутбук на весь учебный день.</p>
+                  <div class="mt-auto pt-3">
+                    <p class="price fs-4 mb-3">59 990 ₽</p>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html">Подробнее</a>
+                      <button class="btn btn-primary" type="button" data-quick-order="studybook" aria-label="Заявка на StudyBook 14">Заявка ↗</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3" data-catalog-category="Планшет">
+              <article class="card product-card h-100">
+                <a class="product-card-image" href="product-notetab.html" aria-label="Подробнее о NoteTab 11">
+                  <img src="images/notetab.svg" alt="Планшет NoteTab 11, схематическое изображение" width="520" height="365" loading="lazy">
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                    <span class="eyebrow mb-0">Планшет</span>
+                    <span class="badge rounded-pill text-bg-light">Для конспектов</span>
+                  </div>
+                  <h3 class="card-title fs-4">
+                    <a href="product-notetab.html">NoteTab 11</a>
+                  </h3>
+                  <p class="card-text text-secondary small">Лекции, электронные книги и заметки — в лёгком формате, который всегда под рукой.</p>
+                  <div class="mt-auto pt-3">
+                    <p class="price fs-4 mb-3">34 990 ₽</p>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product-notetab.html">Подробнее</a>
+                      <button class="btn btn-primary" type="button" data-quick-order="notetab" aria-label="Заявка на NoteTab 11">Заявка ↗</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3" data-catalog-category="Аксессуары">
+              <article class="card product-card h-100">
+                <a class="product-card-image" href="product-focussound.html" aria-label="Подробнее о FocusSound">
+                  <img src="images/focussound.svg" alt="Наушники FocusSound, схематическое изображение" width="520" height="365" loading="lazy">
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                    <span class="eyebrow mb-0">Наушники</span>
+                    <span class="badge rounded-pill text-bg-light">Для концентрации</span>
+                  </div>
+                  <h3 class="card-title fs-4">
+                    <a href="product-focussound.html">FocusSound</a>
+                  </h3>
+                  <p class="card-text text-secondary small">Своя тихая аудитория. Для лекций, созвонов и работы, которой нужно внимание.</p>
+                  <div class="mt-auto pt-3">
+                    <p class="price fs-4 mb-3">8 990 ₽</p>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product-focussound.html">Подробнее</a>
+                      <button class="btn btn-primary" type="button" data-quick-order="focussound" aria-label="Заявка на FocusSound">Заявка ↗</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3" data-catalog-category="Аксессуары">
+              <article class="card product-card h-100">
+                <a class="product-card-image" href="product-codekeys.html" aria-label="Подробнее о CodeKeys">
+                  <img src="images/codekeys.svg" alt="Клавиатура CodeKeys, схематическое изображение" width="520" height="365" loading="lazy">
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                    <span class="eyebrow mb-0">Клавиатура</span>
+                    <span class="badge rounded-pill text-bg-light">Для рабочего места</span>
+                  </div>
+                  <h3 class="card-title fs-4">
+                    <a href="product-codekeys.html">CodeKeys</a>
+                  </h3>
+                  <p class="card-text text-secondary small">Приятный отклик на каждую строку. Компактная механика для кода и больших текстов.</p>
+                  <div class="mt-auto pt-3">
+                    <p class="price fs-4 mb-3">6 490 ₽</p>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product-codekeys.html">Подробнее</a>
+                      <button class="btn btn-primary" type="button" data-quick-order="codekeys" aria-label="Заявка на CodeKeys">Заявка ↗</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="alert alert-light border mt-4 mb-0">Все модели представлены для учебного проекта. Реальные покупки на сайте не совершаются.</div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-md-5">
+            <a class="navbar-brand" href="index.html">study<span class="brand-dot">●</span>
+              <span class="brand-sub">supply</span>
+            </a>
+            <p class="small text-secondary mt-2 mb-0">Для идей, которым нужны инструменты.</p>
+          </div>
+          <div class="col-md-7 text-md-end small text-secondary">
+            <p class="mb-1">Учебный проект. Характеристики и комплектация демонстрационные.</p>
+            <p class="mb-0">Реальных продаж и отправки заявок нет. © 2026 Study Supply</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="eyebrow mb-2">Заявка на консультацию</p>
+              <h2 class="modal-title fs-4" id="modal-title">Расскажите о себе</h2>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно заявки">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary" id="modal-description">Сначала заполните данные, затем проверьте их перед подтверждением.</p>
+            <div data-modal-edit>
+              <form data-order-form novalidate>
+                <div class="alert alert-danger d-none error-summary" role="alert" data-error-summary>
+                  <p class="fw-semibold mb-2">Проверьте поля заявки</p>
+                  <ul class="mb-0" data-error-list>
+                  </ul>
+                </div>
+                <p class="small text-secondary">Поля со звёздочкой обязательны. Заявка учебная: данные не отправляются на сервер.</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="modal-name">Ваше имя <span aria-hidden="true">*</span>
+                    </label>
+                    <input class="form-control" id="modal-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required aria-describedby="modal-name-error">
+                    <div class="invalid-feedback" id="modal-name-error">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="modal-email">Электронная почта <span aria-hidden="true">*</span>
+                    </label>
+                    <input class="form-control" id="modal-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="modal-email-error">
+                    <div class="invalid-feedback" id="modal-email-error">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="modal-phone">Телефон <span aria-hidden="true">*</span>
+                    </label>
+                    <input class="form-control" id="modal-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" required aria-describedby="modal-phone-error modal-phone-hint">
+                    <div class="form-text" id="modal-phone-hint">Например: +7 900 000-00-00. От 10 до 15 цифр.</div>
+                    <div class="invalid-feedback" id="modal-phone-error">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="modal-product">Товар <span aria-hidden="true">*</span>
+                    </label>
+                    <select class="form-select" id="modal-product" name="product" required aria-describedby="modal-product-error">
+                      <option value="">Выберите товар</option>
+                      <option value="studybook">StudyBook 14 — 59 990 ₽</option>
+                      <option value="notetab">NoteTab 11 — 34 990 ₽</option>
+                      <option value="focussound">FocusSound — 8 990 ₽</option>
+                      <option value="codekeys">CodeKeys — 6 490 ₽</option>
+                    </select>
+                    <div class="invalid-feedback" id="modal-product-error">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="modal-comment">Комментарий</label>
+                    <textarea class="form-control" id="modal-comment" name="comment" rows="3" maxlength="1000" placeholder="Для каких задач выбираете устройство?">
+                    </textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="modal-agreement" name="agreement" required aria-describedby="modal-agreement-error">
+                      <label class="form-check-label" for="modal-agreement">Согласен на обработку введённых данных для проверки учебной формы <span aria-hidden="true">*</span>
+                      </label>
+                      <div class="invalid-feedback" id="modal-agreement-error">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap gap-2 mt-4">
+                    <button class="btn btn-primary" type="submit">Проверить заявку <span aria-hidden="true">↗</span>
+                    </button>
+                    <button class="btn btn-outline-secondary" type="reset">Очистить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div data-modal-review hidden>
+              <p class="mb-3">Проверьте товар и контакты. Можно вернуться к редактированию.</p>
+              <dl class="review-details" data-review-details>
+              </dl>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-primary" type="button" data-confirm>Подтвердить заявку</button>
+                <button class="btn btn-outline-secondary" type="button" data-edit>Исправить данные</button>
+              </div>
+            </div>
+            <div data-modal-done hidden>
+              <div class="alert alert-success mb-4" role="status">
+                <h3 class="fs-5">Данные проверены</h3>
+                <p class="mb-0">Учебная заявка подтверждена. Она не отправляется на сервер; оплата не производится.</p>
+              </div>
+              <button class="btn btn-primary" data-bs-dismiss="modal" type="button">Готово</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/catalog-data.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>

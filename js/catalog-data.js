@@ -1,0 +1,1 @@
+window.shopProducts = {"studybook": {"name": "StudyBook 14", "price": "59 990"}, "notetab": {"name": "NoteTab 11", "price": "34 990"}, "focussound": {"name": "FocusSound", "price": "8 990"}, "codekeys": {"name": "CodeKeys", "price": "6 490"}};
