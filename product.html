@@ -1,270 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="StudyBook 14 — техника для учёбы и проектов. Учебный магазин Study Supply.">
-    <title>StudyBook 14 — Study Supply</title>
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div class="topline">
-      <div class="container d-flex justify-content-between gap-3">
-        <span>Техника для учебного ритма</span>
-        <span>Учебный магазин · 2026</span>
-      </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Учебный интернет-магазин техники. Каталог товаров, характеристики и форма заявки." name="description"/>
+  <title>
+   StudyBook 14 — Учебный интернет-магазин
+  </title>
+  <link href="images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/custom.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Перейти к содержимому
+  </a>
+  <header class="site-header">
+   <nav aria-label="Основная навигация" class="navbar navbar-expand-md">
+    <div class="container">
+     <a class="navbar-brand" href="index.html">
+      ShopProject
+     </a>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню" class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto gap-md-4">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">
+         Главная
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="catalog.html">
+         Каталог
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="order.html">
+         Заявка
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="index.html#advantages">
+         Преимущества
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="index.html#popular">
+         Популярные товары
+        </a>
+       </li>
+      </ul>
+     </div>
     </div>
-    <header class="site-header">
-      <nav class="navbar navbar-expand-md" aria-label="Основная навигация">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">study<span class="brand-dot">●</span>
-            <span class="brand-sub">supply</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
-            <span class="navbar-toggler-icon">
+   </nav>
+  </header>
+  <main id="main" tabindex="-1">
+   <section class="section-space pt-4">
+    <div class="container">
+     <nav aria-label="Хлебные крошки">
+      <ol class="breadcrumb small">
+       <li class="breadcrumb-item">
+        <a href="index.html">
+         Главная
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a href="catalog.html">
+         Каталог
+        </a>
+       </li>
+       <li aria-current="page" class="breadcrumb-item active">
+        StudyBook 14
+       </li>
+      </ol>
+     </nav>
+     <div class="row g-4 g-lg-5 align-items-center mt-2">
+      <div class="col-lg-7">
+       <div class="product-gallery">
+        <img alt="StudyBook 14, общий вид" height="365" id="product-image" src="images/studybook.svg" width="520"/>
+       </div>
+       <div aria-label="Виды ноутбука" class="d-flex gap-2 mt-3">
+        <button aria-pressed="true" class="btn btn-outline-primary btn-sm" data-gallery="images/studybook.svg" data-gallery-alt="StudyBook 14, общий вид">
+         Общий вид
+        </button>
+        <button aria-pressed="false" class="btn btn-outline-primary btn-sm" data-gallery="images/studybook-detail.svg" data-gallery-alt="StudyBook 14, схема клавиатуры">
+         Клавиатура
+        </button>
+       </div>
+      </div>
+      <div class="col-lg-5">
+       <span class="badge rounded-pill text-bg-light mb-3">
+        Для проектов
+       </span>
+       <h1 class="page-title">
+        StudyBook 14
+       </h1>
+       <p class="lead text-secondary">
+        Ноутбук для учёбы, работы с документами и веб-разработки.
+       </p>
+       <p class="price display-6 my-4">
+        59 990 ₽
+       </p>
+       <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-primary" data-quick-order="studybook" type="button">
+         Заявка на консультацию
+        </button>
+        <a class="btn btn-outline-primary" href="order.html?product=studybook">
+         Открыть форму
+        </a>
+       </div>
+       <p class="small text-secondary mt-3">
+        Демонстрационная модель. Цена и характеристики учебные.
+       </p>
+      </div>
+     </div>
+     <div class="product-information mt-5">
+      <ul aria-label="Информация о товаре" class="nav nav-tabs" role="tablist">
+       <li class="nav-item" role="presentation">
+        <button aria-controls="pane-tasks" aria-selected="true" class="nav-link active" data-bs-target="#pane-tasks" data-bs-toggle="tab" id="tab-tasks" role="tab" type="button">
+         Для каких задач
+        </button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button aria-controls="pane-specs" aria-selected="false" class="nav-link" data-bs-target="#pane-specs" data-bs-toggle="tab" id="tab-specs" role="tab" type="button">
+         Характеристики
+        </button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button aria-controls="pane-kit" aria-selected="false" class="nav-link" data-bs-target="#pane-kit" data-bs-toggle="tab" id="tab-kit" role="tab" type="button">
+         Комплектация
+        </button>
+       </li>
+      </ul>
+      <div class="tab-content p-4 p-lg-5">
+       <section aria-labelledby="tab-tasks" class="tab-pane fade show active" id="pane-tasks" role="tabpanel" tabindex="0">
+        <h2 class="fs-3 mb-4">
+         Для каких задач подходит
+        </h2>
+        <ul class="task-list">
+         <li>
+          Учебная веб-разработка в редакторе кода и браузере.
+         </li>
+         <li>
+          Документы, презентации и видеосвязь.
+         </li>
+         <li>
+          Работа с проектами дома и в аудитории.
+         </li>
+        </ul>
+        <div class="alert alert-light border mt-4 mb-0">
+         <h3 class="fs-6">
+          Что учесть перед выбором
+         </h3>
+         Не предназначен для тяжёлого 3D-рендеринга. Автономность зависит от нагрузки; точное время в учебной модели не заявлено.
+        </div>
+       </section>
+       <section aria-labelledby="tab-specs" class="tab-pane fade" id="pane-specs" role="tabpanel" tabindex="0">
+        <h2 class="fs-3 mb-4">
+         Технические характеристики
+        </h2>
+        <div class="table-responsive">
+         <table class="table mb-0">
+          <caption>
+           Учебные характеристики StudyBook 14
+          </caption>
+          <tbody>
+           <tr>
+            <th scope="row">
+             Экран
+            </th>
+            <td>
+             14 дюймов
+            </td>
+           </tr>
+           <tr>
+            <th scope="row">
+             Оперативная память
+            </th>
+            <td>
+             16 ГБ
+            </td>
+           </tr>
+           <tr>
+            <th scope="row">
+             Накопитель
+            </th>
+            <td>
+             512 ГБ SSD
+            </td>
+           </tr>
+           <tr>
+            <th scope="row">
+             Вес
+            </th>
+            <td>
+             1,35 кг
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </section>
+       <section aria-labelledby="tab-kit" class="tab-pane fade" id="pane-kit" role="tabpanel" tabindex="0">
+        <h2 class="fs-3 mb-4">
+         Что в комплекте
+        </h2>
+        <ul class="task-list">
+         <li>
+          Ноутбук StudyBook 14
+         </li>
+         <li>
+          Блок питания
+         </li>
+         <li>
+          Краткое руководство
+         </li>
+        </ul>
+        <p class="text-secondary small mt-4 mb-0">
+         Комплектация указана для учебного примера и не является предложением продажи.
+        </p>
+       </section>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container">
+    <p class="mb-1">
+     © 2026 Учебный интернет-магазин
+    </p>
+    <p class="mb-1">
+     Дисциплина: Фронтенд и бэкенд разработка
+    </p>
+    <p class="small text-secondary mb-0">
+     Учебный сайт. Продажи и отправка заявок на сервер не выполняются.
+    </p>
+   </div>
+  </footer>
+  <div aria-describedby="modal-description" aria-labelledby="modal-title" class="modal fade" id="order-modal" tabindex="-1">
+   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+     <div class="modal-header">
+      <div>
+       <h2 class="modal-title fs-4" id="modal-title">
+        Расскажите о себе
+       </h2>
+      </div>
+      <button aria-label="Закрыть окно заявки" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <p class="text-secondary" id="modal-description">
+       Сначала заполните данные, затем проверьте их перед подтверждением.
+      </p>
+      <div data-modal-edit="">
+       <form data-order-form="" novalidate="">
+        <div class="alert alert-danger d-none error-summary" data-error-summary="" role="alert">
+         <p class="fw-semibold mb-2">
+          Проверьте поля заявки
+         </p>
+         <ul class="mb-0" data-error-list="">
+         </ul>
+        </div>
+        <p class="small text-secondary">
+         Поля со звёздочкой обязательны. Заявка учебная: данные не отправляются на сервер.
+        </p>
+        <div class="row g-3">
+         <div class="col-md-6">
+          <label class="form-label" for="modal-name">
+           Ваше имя
+           <span aria-hidden="true">
+            *
+           </span>
+          </label>
+          <input aria-describedby="modal-name-error" autocomplete="name" class="form-control" id="modal-name" maxlength="80" minlength="2" name="name" required="" type="text"/>
+          <div class="invalid-feedback" id="modal-name-error">
+          </div>
+         </div>
+         <div class="col-md-6">
+          <label class="form-label" for="modal-email">
+           Электронная почта
+           <span aria-hidden="true">
+            *
+           </span>
+          </label>
+          <input aria-describedby="modal-email-error" autocomplete="email" class="form-control" id="modal-email" maxlength="120" name="email" required="" type="email"/>
+          <div class="invalid-feedback" id="modal-email-error">
+          </div>
+         </div>
+         <div class="col-md-6">
+          <label class="form-label" for="modal-phone">
+           Телефон
+           <span aria-hidden="true">
+            *
+           </span>
+          </label>
+          <input aria-describedby="modal-phone-error modal-phone-hint" autocomplete="tel" class="form-control" id="modal-phone" maxlength="30" name="phone" required="" type="tel"/>
+          <div class="form-text" id="modal-phone-hint">
+           Например: +7 900 000-00-00. От 10 до 15 цифр.
+          </div>
+          <div class="invalid-feedback" id="modal-phone-error">
+          </div>
+         </div>
+         <div class="col-md-6">
+          <label class="form-label" for="modal-product">
+           Товар
+           <span aria-hidden="true">
+            *
+           </span>
+          </label>
+          <select aria-describedby="modal-product-error" class="form-select" id="modal-product" name="product" required="">
+           <option value="">
+            Выберите товар
+           </option>
+           <option value="studybook">
+            StudyBook 14 — 59 990 ₽
+           </option>
+           <option value="notetab">
+            NoteTab 11 — 34 990 ₽
+           </option>
+           <option value="focussound">
+            FocusSound — 8 990 ₽
+           </option>
+           <option value="codekeys">
+            CodeKeys — 6 490 ₽
+           </option>
+          </select>
+          <div class="invalid-feedback" id="modal-product-error">
+          </div>
+         </div>
+         <div class="col-12">
+          <label class="form-label" for="modal-comment">
+           Комментарий
+          </label>
+          <textarea class="form-control" id="modal-comment" maxlength="1000" name="comment" placeholder="Для каких задач выбираете устройство?" rows="3"></textarea>
+         </div>
+         <div class="col-12">
+          <div class="form-check">
+           <input aria-describedby="modal-agreement-error" class="form-check-input" id="modal-agreement" name="agreement" required="" type="checkbox"/>
+           <label class="form-check-label" for="modal-agreement">
+            Согласен на обработку введённых данных для проверки учебной формы
+            <span aria-hidden="true">
+             *
             </span>
+           </label>
+           <div class="invalid-feedback" id="modal-agreement-error">
+           </div>
+          </div>
+         </div>
+         <div class="col-12 d-flex flex-wrap gap-2 mt-4">
+          <button class="btn btn-primary" type="submit">
+           Проверить заявку
           </button>
-          <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav ms-auto gap-md-4">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="order.html">Заявка</a>
-              </li>
-            </ul>
-            <a class="btn btn-dark ms-md-4 my-2 my-md-0" href="catalog.html">Выбрать устройство <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          <button class="btn btn-outline-secondary" type="reset">
+           Очистить
+          </button>
+         </div>
         </div>
-      </nav>
-    </header>
-    <main id="main" tabindex="-1">
-      <section class="section-space pt-4">
-        <div class="container">
-          <nav aria-label="Хлебные крошки">
-            <ol class="breadcrumb small">
-              <li class="breadcrumb-item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="catalog.html">Каталог</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">StudyBook 14</li>
-            </ol>
-          </nav>
-          <div class="row g-4 g-lg-5 align-items-center mt-2">
-            <div class="col-lg-7">
-              <div class="product-gallery">
-                <img id="product-image" src="images/studybook.svg" alt="StudyBook 14, общий вид" width="520" height="365">
-              </div>
-              <div class="d-flex gap-2 mt-3" aria-label="Виды ноутбука">
-                <button class="btn btn-outline-dark btn-sm" data-gallery="images/studybook.svg" data-gallery-alt="StudyBook 14, общий вид" aria-pressed="true">Общий вид</button>
-                <button class="btn btn-outline-dark btn-sm" data-gallery="images/studybook-detail.svg" data-gallery-alt="StudyBook 14, схема клавиатуры" aria-pressed="false">Клавиатура</button>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <span class="badge rounded-pill text-bg-light mb-3">Для проектов</span>
-              <p class="eyebrow">Ноутбук</p>
-              <h1 class="page-title">StudyBook 14</h1>
-              <p class="lead text-secondary">Код, презентации и десятки открытых вкладок. Один ноутбук на весь учебный день.</p>
-              <p class="price display-6 my-4">59 990 ₽</p>
-              <div class="d-flex flex-wrap gap-2">
-                <button class="btn btn-primary btn-lg" type="button" data-quick-order="studybook">Заявка на консультацию ↗</button>
-                <a class="btn btn-outline-dark" href="order.html?product=studybook">Открыть форму</a>
-              </div>
-              <p class="small text-secondary mt-3">Демонстрационная модель. Цена и характеристики учебные.</p>
-            </div>
-          </div>
-          <div class="product-information mt-5">
-            <ul class="nav nav-tabs" role="tablist" aria-label="Информация о товаре">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="tab-tasks" data-bs-toggle="tab" data-bs-target="#pane-tasks" type="button" role="tab" aria-controls="pane-tasks" aria-selected="true">Для каких задач</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-specs" data-bs-toggle="tab" data-bs-target="#pane-specs" type="button" role="tab" aria-controls="pane-specs" aria-selected="false">Характеристики</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-kit" data-bs-toggle="tab" data-bs-target="#pane-kit" type="button" role="tab" aria-controls="pane-kit" aria-selected="false">Комплектация</button>
-              </li>
-            </ul>
-            <div class="tab-content p-4 p-lg-5">
-              <section class="tab-pane fade show active" id="pane-tasks" role="tabpanel" aria-labelledby="tab-tasks" tabindex="0">
-                <h2 class="fs-3 mb-4">Больше возможностей в вашем ритме</h2>
-                <ul class="task-list">
-                  <li>Учебная веб-разработка в редакторе кода и браузере.</li>
-                  <li>Документы, презентации и видеосвязь.</li>
-                  <li>Работа с проектами дома и в аудитории.</li>
-                </ul>
-                <div class="alert alert-light border mt-4 mb-0">
-                  <h3 class="fs-6">Что учесть перед выбором</h3>Не предназначен для тяжёлого 3D-рендеринга. Автономность зависит от нагрузки; точное время в учебной модели не заявлено.</div>
-              </section>
-              <section class="tab-pane fade" id="pane-specs" role="tabpanel" aria-labelledby="tab-specs" tabindex="0">
-                <h2 class="fs-3 mb-4">Технические характеристики</h2>
-                <div class="table-responsive">
-                  <table class="table mb-0">
-                    <caption>Учебные характеристики StudyBook 14</caption>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Экран</th>
-                        <td>14 дюймов</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Оперативная память</th>
-                        <td>16 ГБ</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Накопитель</th>
-                        <td>512 ГБ SSD</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Вес</th>
-                        <td>1,35 кг</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-              <section class="tab-pane fade" id="pane-kit" role="tabpanel" aria-labelledby="tab-kit" tabindex="0">
-                <h2 class="fs-3 mb-4">Что в комплекте</h2>
-                <ul class="task-list">
-                  <li>Ноутбук StudyBook 14</li>
-                  <li>Блок питания</li>
-                  <li>Краткое руководство</li>
-                </ul>
-                <p class="text-secondary small mt-4 mb-0">Комплектация указана для учебного примера и не является предложением продажи.</p>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row gy-3 align-items-center">
-          <div class="col-md-5">
-            <a class="navbar-brand" href="index.html">study<span class="brand-dot">●</span>
-              <span class="brand-sub">supply</span>
-            </a>
-            <p class="small text-secondary mt-2 mb-0">Для идей, которым нужны инструменты.</p>
-          </div>
-          <div class="col-md-7 text-md-end small text-secondary">
-            <p class="mb-1">Учебный проект. Характеристики и комплектация демонстрационные.</p>
-            <p class="mb-0">Реальных продаж и отправки заявок нет. © 2026 Study Supply</p>
-          </div>
-        </div>
+       </form>
       </div>
-    </footer>
-    <div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="modal-title" aria-describedby="modal-description">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div>
-              <p class="eyebrow mb-2">Заявка на консультацию</p>
-              <h2 class="modal-title fs-4" id="modal-title">Расскажите о себе</h2>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно заявки">
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="text-secondary" id="modal-description">Сначала заполните данные, затем проверьте их перед подтверждением.</p>
-            <div data-modal-edit>
-              <form data-order-form novalidate>
-                <div class="alert alert-danger d-none error-summary" role="alert" data-error-summary>
-                  <p class="fw-semibold mb-2">Проверьте поля заявки</p>
-                  <ul class="mb-0" data-error-list>
-                  </ul>
-                </div>
-                <p class="small text-secondary">Поля со звёздочкой обязательны. Заявка учебная: данные не отправляются на сервер.</p>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="modal-name">Ваше имя <span aria-hidden="true">*</span>
-                    </label>
-                    <input class="form-control" id="modal-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required aria-describedby="modal-name-error">
-                    <div class="invalid-feedback" id="modal-name-error">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="modal-email">Электронная почта <span aria-hidden="true">*</span>
-                    </label>
-                    <input class="form-control" id="modal-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="modal-email-error">
-                    <div class="invalid-feedback" id="modal-email-error">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="modal-phone">Телефон <span aria-hidden="true">*</span>
-                    </label>
-                    <input class="form-control" id="modal-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" required aria-describedby="modal-phone-error modal-phone-hint">
-                    <div class="form-text" id="modal-phone-hint">Например: +7 900 000-00-00. От 10 до 15 цифр.</div>
-                    <div class="invalid-feedback" id="modal-phone-error">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="modal-product">Товар <span aria-hidden="true">*</span>
-                    </label>
-                    <select class="form-select" id="modal-product" name="product" required aria-describedby="modal-product-error">
-                      <option value="">Выберите товар</option>
-                      <option value="studybook">StudyBook 14 — 59 990 ₽</option>
-                      <option value="notetab">NoteTab 11 — 34 990 ₽</option>
-                      <option value="focussound">FocusSound — 8 990 ₽</option>
-                      <option value="codekeys">CodeKeys — 6 490 ₽</option>
-                    </select>
-                    <div class="invalid-feedback" id="modal-product-error">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label" for="modal-comment">Комментарий</label>
-                    <textarea class="form-control" id="modal-comment" name="comment" rows="3" maxlength="1000" placeholder="Для каких задач выбираете устройство?">
-                    </textarea>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="modal-agreement" name="agreement" required aria-describedby="modal-agreement-error">
-                      <label class="form-check-label" for="modal-agreement">Согласен на обработку введённых данных для проверки учебной формы <span aria-hidden="true">*</span>
-                      </label>
-                      <div class="invalid-feedback" id="modal-agreement-error">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex flex-wrap gap-2 mt-4">
-                    <button class="btn btn-primary" type="submit">Проверить заявку <span aria-hidden="true">↗</span>
-                    </button>
-                    <button class="btn btn-outline-secondary" type="reset">Очистить</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div data-modal-review hidden>
-              <p class="mb-3">Проверьте товар и контакты. Можно вернуться к редактированию.</p>
-              <dl class="review-details" data-review-details>
-              </dl>
-              <div class="d-flex flex-wrap gap-2">
-                <button class="btn btn-primary" type="button" data-confirm>Подтвердить заявку</button>
-                <button class="btn btn-outline-secondary" type="button" data-edit>Исправить данные</button>
-              </div>
-            </div>
-            <div data-modal-done hidden>
-              <div class="alert alert-success mb-4" role="status">
-                <h3 class="fs-5">Данные проверены</h3>
-                <p class="mb-0">Учебная заявка подтверждена. Она не отправляется на сервер; оплата не производится.</p>
-              </div>
-              <button class="btn btn-primary" data-bs-dismiss="modal" type="button">Готово</button>
-            </div>
-          </div>
-        </div>
+      <div data-modal-review="" hidden="">
+       <p class="mb-3">
+        Проверьте товар и контакты. Можно вернуться к редактированию.
+       </p>
+       <dl class="review-details" data-review-details="">
+       </dl>
+       <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-primary" data-confirm="" type="button">
+         Подтвердить заявку
+        </button>
+        <button class="btn btn-outline-secondary" data-edit="" type="button">
+         Исправить данные
+        </button>
+       </div>
       </div>
+      <div data-modal-done="" hidden="">
+       <div class="alert alert-success mb-4" role="status">
+        <h3 class="fs-5">
+         Данные проверены
+        </h3>
+        <p class="mb-0">
+         Учебная заявка подтверждена. Она не отправляется на сервер; оплата не производится.
+        </p>
+       </div>
+       <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+        Готово
+       </button>
+      </div>
+     </div>
     </div>
-    <script src="vendor/bootstrap/bootstrap.bundle.min.js">
-    </script>
-    <script src="js/catalog-data.js">
-    </script>
-    <script src="js/main.js">
-    </script>
-  </body>
+   </div>
+  </div>
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/catalog-data.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
 </html>
