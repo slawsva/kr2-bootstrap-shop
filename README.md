@@ -68,3 +68,9 @@ Bootstrap 5.3.8 подключён локально: https://getbootstrap.com/do
 ## Автор
 
 Сакулин Святослав Антонович, ЭФБО-02-25.
+
+## Ссылки для сдачи
+
+Репозиторий для СДО: https://github.com/slawsva/kr2-bootstrap-shop
+
+Опубликованный сайт: https://slawsva.github.io/kr2-bootstrap-shop/
